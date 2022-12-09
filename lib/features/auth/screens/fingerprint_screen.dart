@@ -11,7 +11,7 @@ class FingerPrintScreen extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: () {
-            FingerprintAuth().authenthicationPossibility(context);
+            AuthController().fingerprintAuthentication(context);
           },
           child: const Text('Finger print'),
         ),

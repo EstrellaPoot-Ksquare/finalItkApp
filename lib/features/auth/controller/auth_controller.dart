@@ -1,10 +1,10 @@
 import 'package:final_itk_app/core/utils/snackbar_manager.dart';
 import 'package:local_auth/local_auth.dart';
 
-class FingerprintAuth {
+class AuthController {
   final LocalAuthentication auth = LocalAuthentication();
   // ···
-  authenthicationPossibility(context) async {
+  fingerprintAuthentication(context) async {
     final bool canAuthenticateWithBiometrics = await auth.canCheckBiometrics;
     final bool canAuthenticate =
         canAuthenticateWithBiometrics || await auth.isDeviceSupported();
