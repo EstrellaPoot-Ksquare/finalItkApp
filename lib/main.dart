@@ -1,6 +1,6 @@
 import 'package:final_itk_app/core/styles/app_theme.dart';
+import 'package:final_itk_app/features/auth/screens/fingerprint_screen.dart';
 import 'package:final_itk_app/features/serie/controller/serie_controller.dart';
-import 'package:final_itk_app/features/serie/screens/series_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: AppTheme.theme,
-        home: const SeriesList(),
+        home: const FingerPrintScreen(),
       ),
     );
   }

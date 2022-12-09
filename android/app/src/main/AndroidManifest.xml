@@ -4,8 +4,8 @@
         android:label="final_itk_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <activity
-            android:name=".MainActivity"
+        <activity 
+        android:name="io.flutter.embedding.android.FlutterFragmentActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
