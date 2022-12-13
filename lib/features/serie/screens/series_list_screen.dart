@@ -2,8 +2,8 @@ import 'package:final_itk_app/features/serie/controller/serie_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class SeriesList extends StatelessWidget {
-  const SeriesList({super.key});
+class SeriesListScreen extends StatelessWidget {
+  const SeriesListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +25,11 @@ class SeriesList extends StatelessWidget {
                   itemBuilder: (context, index) {
                     var serie = series[index];
                     return ListTile(
+                      onTap: () {
+                        provider.setSerieDetailsScreen(serie.id!);
+                        Navigator.pushNamed(context, '/serie-details',
+                            arguments: index);
+                      },
                       leading: Text(
                         '${serie.id}',
                         style: const TextStyle(

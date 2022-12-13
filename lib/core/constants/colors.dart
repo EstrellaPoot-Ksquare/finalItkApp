@@ -6,4 +6,5 @@ class AppColors {
   static Color main = const Color(0xff00d1ff);
   static Color snackbarBg = const Color(0xfff25723);
   static Color snackbarMsg = const Color(0xFFFFFFFF);
+  static Color normalText = const Color(0xFFFFFFFF);
 }

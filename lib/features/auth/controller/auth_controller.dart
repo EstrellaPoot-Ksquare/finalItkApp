@@ -25,7 +25,7 @@ class AuthController {
       );
       if (didAuthenticate) {
         SnackbarManager()
-            .displaySnackbar(context, 'Successfully authenticated');
+            .displaySnackbar(context, 'Successfully         authenticated');
       }
     } catch (e) {
       print('error: $e');

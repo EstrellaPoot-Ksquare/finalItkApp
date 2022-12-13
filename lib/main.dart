@@ -1,5 +1,5 @@
+import 'package:final_itk_app/core/routes/route_generator.dart';
 import 'package:final_itk_app/core/styles/app_theme.dart';
-import 'package:final_itk_app/features/auth/screens/fingerprint_screen.dart';
 import 'package:final_itk_app/features/serie/controller/serie_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: AppTheme.theme,
-        home: const FingerPrintScreen(),
+        initialRoute: '/series-list',
+        onGenerateRoute: RouteGenerator().routes,
       ),
     );
   }
